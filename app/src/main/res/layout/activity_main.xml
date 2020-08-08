@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="#92C060"
+    android:layout_height="match_parent">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="411dp"
+        android:layout_height="412dp"
+        android:src="@drawable/dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/buttonCatchUp"
+        android:layout_width="412dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:background="#284D00"
+        android:hint="Holds a number between 1 and 10"
+        android:text="Catch Up The Number"
+        android:textColor="#C2E79A"
+        android:textSize="25dp"
+        android:onClick="catchUp"
+        app:layout_constraintTop_toBottomOf="@+id/gif"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="385dp"
+        android:layout_height="138dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCatchUp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

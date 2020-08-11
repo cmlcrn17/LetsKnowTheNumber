@@ -6,7 +6,7 @@ Number is between 1 - 10.
 Users have got a three right.
 
 
-Application Play Store URL: -
+Application Play Store URL: https://play.google.com/store/apps/details?id=com.cemilecerenerdem
 
 ![Alert Yönetimi](https://github.com/cmlcrn17/LetsKnowTheNumber/blob/master/Info/LetsCatchUp.gif)
 

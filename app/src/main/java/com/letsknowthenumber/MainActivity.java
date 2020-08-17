@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         prefManager = new PreferencesManager(getApplicationContext());
 
-        //region AdView
+        //region AdView and Admob
         MobileAds.initialize(this, "ca-app-pub-1077976104717606/1453906727");
 
         mAdView = findViewById(R.id.adView);

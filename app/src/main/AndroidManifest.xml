@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1077976104717606~5002323392"/>
+            android:value="ca-app-pub-1077976104717606~2766988396"/>
 
         <activity android:name=".ResultActivity"></activity>
         <activity android:name=".GuessActivity" />

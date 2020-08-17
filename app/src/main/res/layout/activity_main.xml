@@ -3,8 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:background="#92C060"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#92C060">
+
+
+    <Button
+        android:id="@+id/buttonCatchUp"
+        android:layout_width="338dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#284D00"
+        android:hint="Holds a number between 1 and 10"
+        android:onClick="catchUp"
+        android:text="Catch Up The Number"
+        android:textColor="#C2E79A"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputUserName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textInputUserName"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:outlineAmbientShadowColor="#C2E79A"
+        android:outlineSpotShadowColor="#C2E79A"
+        android:shadowColor="#C2E79A"
+        android:textColor="#284D00"
+        android:textColorHighlight="#C2E79A"
+        android:textColorLink="#C2E79A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gif" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="385dp"
+        android:layout_height="138dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1077976104717606/1453906727"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCatchUp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp" />
 
 
     <pl.droidsonroids.gif.GifImageView
@@ -16,36 +62,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
-
-    <Button
-        android:id="@+id/buttonCatchUp"
-        android:layout_width="412dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="10dp"
-        android:background="#284D00"
-        android:hint="Holds a number between 1 and 10"
-        android:text="Catch Up The Number"
-        android:textColor="#C2E79A"
-        android:textSize="25dp"
-        android:onClick="catchUp"
-        app:layout_constraintTop_toBottomOf="@+id/gif"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
-
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="385dp"
-        android:layout_height="138dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCatchUp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

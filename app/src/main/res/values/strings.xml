@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LetsKnowTheNumber</string>
+    <string name="error_Null">Your name is not null.</string>
 </resources>

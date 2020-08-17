@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -42,9 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void catchUp(View v) {
         EditText edtUserName = (EditText) findViewById(R.id.textInputUserName);
-        prefManager.setUserName(edtUserName.getText().toString());
 
-        Log.d("PrefMan-UserName", prefManager.getUserName());
-        startActivity(new Intent(MainActivity.this, GuessActivity.class));
+        if(edtUserName.equals("")){
+            Toast.makeText(MainActivity.this, getString(R.string.error_Null), Toast.LENGTH_SHORT).show();
+        }else{
+            prefManager.setUserName(edtUserName.getText().toString());
+            Log.d("PrefMan-UserName", prefManager.getUserName());
+            startActivity(new Intent(MainActivity.this, GuessActivity.class));
+        }
     }
 }
